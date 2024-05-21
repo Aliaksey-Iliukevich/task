@@ -23,12 +23,12 @@ export default {
     },
     label: String,
     buttonPosition: String,
-    value: String,
-    inputClasses: Array
+    modelValue: String,
+    inputClasses: String
   },
   data() {
     return {
-      inputValue: this.value || '', 
+      inputValue: this.modelValue || '', 
       wordsLimit: false
     };
   },
