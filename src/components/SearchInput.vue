@@ -62,10 +62,6 @@ export default {
 </script>
 
 <style scoped>
-.input-container {
-    position: relative;
-}
-  
 .input-wrapper {
     position: relative;
 }
@@ -76,8 +72,8 @@ input {
 
 button {
     position: absolute;
-    right: 40px;
-    top: 0;
+    left: 200px;
+    top: 3px;
     padding: 5px;
 }
 </style>

@@ -15,7 +15,7 @@ export default {
     return {
       value: '', // реактивное изм. значения введённого в поле поиска
       fontSize: 20, // установить нужный размер шрифта
-      inputClasses: ['class-1', 'class-2'] // классы передаваемые в инпут
+      inputClasses: 'class-1, class-2' // классы передаваемые в инпут
     };
   },
   methods: {
