@@ -24,11 +24,11 @@ export default {
     label: String,
     buttonPosition: String,
     value: String,
-    inputClasses: String
+    inputClasses: Array
   },
   data() {
     return {
-      inputValue: this.value,
+      inputValue: '',
       wordsLimit: false
     };
   },
