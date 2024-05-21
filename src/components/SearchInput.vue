@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      inputValue: '',
+      inputValue: this.value || '', 
       wordsLimit: false
     };
   },
