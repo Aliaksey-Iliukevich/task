@@ -1,6 +1,14 @@
 <template>
   <div>
-    <SearchInput label="Input value:" v-model="modelValue" :font-size="fontSize" :input-classes="inputClasses.join(' ')" @update:value="updateInputValue" @clearInput="handleClearInput" />
+    <SearchInput 
+      label="Input value:" 
+      v-model="search"
+      class="class-1 class-2"
+      :font-size="fontSize"
+      placeholder="Найти..."
+      @clearInput="handleClearInput"
+    />
+    {{ search }}
   </div>
 </template>
 
@@ -13,17 +21,13 @@ export default {
   },
   data() {
     return {
-      modelValue: '', // Реактивное изменение значения введенного в поле поиска
+      search: '', // Реактивное изменение значения введенного в поле поиска
       fontSize: 20, // Установлен нужный размер шрифта
       inputClasses: ['class-1', 'class-2'] // Классы, передаваемые в инпут
     };
   },
   methods: {
-    updateInputValue(newValue) {
-      this.modelValue = newValue;
-    },
     handleClearInput() {
-      this.modelValue = '';
       console.log('Инпут очищен!');
     }
   }
